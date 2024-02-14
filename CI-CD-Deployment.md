@@ -176,6 +176,14 @@
     5. Klicka "Deploy"
 
     ![deployment-success](image-21.png)
+
+11. Pusha dina ändringar om du har några
+    ```bash
+    git add .
+    git commit -m "Ready to deploy"
+    git push
+    ```
+    
 9. Deploy
     1. 'Add New Project'
     2. Välj projekt -> Repo -> Folder (App)
