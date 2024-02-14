@@ -18,13 +18,13 @@
     1. Skapa en mapp för projektet
     2. Lägg till en '.devcontainer' från ett tidigare projekt
 
-    ![insert_devcontainer](image-1.png)
+    ![insert_devcontainer](img/image-1.png)
 
     3. Öppna terminalen och skapa en koppling till ditt repo:
 
         -> se till att du är i rätt mapp
 
-    ![project-folder](image.png)
+    ![project-folder](img/image.png)
 
     ```bash
     git init
@@ -50,13 +50,13 @@
 
         -> Klicka på knappen som poppar upp
 
-    ![reopen_in_container](image.png)
+    ![reopen_in_container](img/image.png)
 
     4. Se till att din container med rätt namn kör
         
         -> namnet matcher din root-mapp
 
-    ![docker-desktop](image-1.png)
+    ![docker-desktop](img/image-1.png)
 
 5. **Skapa ett Laravel-projekt**
 
@@ -81,7 +81,7 @@
 
     4. Låt projektet ladda till 100% och vänta tills att du ser det här:
 
-    ![project-made](image-2.png)
+    ![project-made](img/image-2.png)
 
 6. **Skapa en databas från VSCode terminalen**
 
@@ -92,21 +92,21 @@
     php artisan serve
     ```
 
-    ![laravel-project-page](image-3.png)
+    ![laravel-project-page](img/image-3.png)
 
     2. Ändra information i .env filen
     
     från:
 
-    ![db-information-env](image-5.png)
+    ![db-information-env](img/image-5.png)
 
     till:
 
-    ![new-db-information](image-7.png)
+    ![new-db-information](img/image-7.png)
 
     Använd den här informationen på avien.io
 
-    ![avien-io-information](image-6.png)
+    ![avien-io-information](img/image-6.png)
 
     3. Skapa databas:
 
@@ -114,13 +114,13 @@
     php artisan migrate
     ```
 
-    ![migrate-1](image-8.png)
+    ![migrate-1](img/image-8.png)
 
     4. Logga in på databas och kolla så att kopplingen fungerar
 
         -> Använd informationen från avien och din .env fil
 
-    ![db-login](image-9.png)
+    ![db-login](img/image-9.png)
 
     -> server = `host`:`port`
 
@@ -132,17 +132,17 @@
 
     5. Nu kan du slutföra installationen på avien.io genom att klicka på 'next step' utan att fylla i information om ip och annat. Tills du kommer till:
 
-    ![finish-button](image-13.png) 
+    ![finish-button](img/image-13.png) 
 
     -> klicka på knappen
 
 7. **Skapa en 'api' mapp i projekt-root-mappen**
 
-    ![api-folder-creation](image-10.png)
+    ![api-folder-creation](img/image-10.png)
 
     1. skapa en 'index.php' fil
 
-    ![index-file-creation](image-11.png)
+    ![index-file-creation](img/image-11.png)
 
     2. Klistra in följande kod i `index.php` filen
 
@@ -154,7 +154,7 @@
 
 8. **Skapa en varcel.json fil i projekt-root-mappen**
 
-    ![varcel-json](image-12.png)
+    ![varcel-json](img/image-12.png)
 
     -> Denna fil berättar hur vår applikation ser ut och hur dess innehåll ska presenteras
 
@@ -202,7 +202,7 @@
 
 10. **"Import Project"**
 
-    ![import-project](image-14.png)  
+    ![import-project](img/image-14.png)  
 
     1. Klicka import
 
@@ -214,21 +214,21 @@
 
         -> Root Directory: (bild)
 
-    ![app-root-directory](image-15.png)
+    ![app-root-directory](img/image-15.png)
 
     3. 'Build and Output Settings'
 
-    ![build-and-output-settings](image-16.png)
+    ![build-and-output-settings](img/image-16.png)
 
     4. 'Environment Variables'
 
-    ![environment-variables](image-17.png)
+    ![environment-variables](img/image-17.png)
 
     Nu ska vi lägga till följande `Key` - `Value` par [Add]. Detta gör vi en och en.
 
     -> `APP_KEY` - `base64:dittnyckelvärde=` <- denna nyckel är unik, kopiera inte denna.
 
-    ![alt text](image-19.png)
+    ![alt text](img/image-19.png)
 
     Har du inte något värde på `APP_KEY` i din .env fil så kan du generera en:
 
@@ -248,11 +248,11 @@
 
     -> `DB_PASSWORD` - `*************` <- Avian password
 
-    ![result-environment-variables](image-20.png)
+    ![result-environment-variables](img/image-20.png)
 
     5. Klicka "Deploy"
 
-    ![deployment-success](image-21.png)
+    ![deployment-success](img/image-21.png)
 
 11. **Lägg till en funktion som hjälper med säkerhet och skapar https requests istället för http**
 
@@ -276,12 +276,12 @@ if($this->app->environment('production')) {
 
     -> Efter att du har klickat 'deploy' på *vercel.com*
 
-    ![deploy-website-1](image-22.png)
+    ![deploy-website-1](img/image-22.png)
 
     -> Klicka på deplyment länken 
 
-    ![deployment-website-2](image-23.png)
+    ![deployment-website-2](img/image-23.png)
 
     -> Klicka på url:en eller 'Visit'
-    
-    ![deployment-website-3](image-24.png)
+
+    ![deployment-website-3](img/image-24.png)
