@@ -138,10 +138,44 @@
 
 9. Pusha dina ändringar
   ```bash
+  git add .
   git commit -m "My first deployment"
   git push
   ```
 
+10. "Import Project"
+
+    ![import-project](image-14.png)  
+
+    1. Klicka import
+    2. Säkerställ att informationen stämmer
+    -> Project Name: 'exempel-namn'
+    -> Framework Preset: 'Other
+    -> Root Directory: (bild)
+    ![app-root-directory](image-15.png)
+    3. 'Build and Output Settings'
+    ![build-and-output-settings](image-16.png)
+    4. 'Environment Variables'
+    ![environment-variables](image-17.png)
+    Nu ska vi lägga till följande `Key` - `Value` par [Add]. Detta gör vi en och en.
+    -> `APP_KEY` - `base64:dittnyckelvärde=` <- denna nyckel är unik, kopiera inte denna.
+    ![alt text](image-19.png)
+    Har du inte något värde på `APP_KEY` i din .env fil så kan du generera en:
+    ```bash
+    php artisan key:generate
+    ```
+    -> `DB_CONNECTION` - `mysql`
+    -> `DB_HOST` - `lloydelery-db1-mysql-lloydelery-db1.a.aivencloud.com` <- Din avian 'host' string 
+    -> `DB_POST` - `19256` <- Avian port value
+    -> `DB_DATABASE` - `defaultdb` <- Avian database name
+    -> `DB_USERNAME` - `avnadmin` <- Avian username
+    -> `DB_PASSWORD` - `*************` <- Avian password
+
+    ![result-environment-variables](image-20.png)
+
+    5. Klicka "Deploy"
+
+    ![deployment-success](image-21.png)
 9. Deploy
     1. 'Add New Project'
     2. Välj projekt -> Repo -> Folder (App)
